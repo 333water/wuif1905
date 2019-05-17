@@ -1,0 +1,300 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,input,textarea,select{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: #dedede;
+    font-family: 华文新魏，sans-serif;
+    /*在电脑中没有合适字体的时候时自动选择相似字体*/
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    color: #f8f8f8;
+    text-decoration: none;
+    /*去掉a标签中字体默认样式*/
+}
+.header{
+    width: 1350px;
+    height: 60px;
+    background: #1c2723;
+}
+.headerbox{
+    width: 80%;
+    height: 100%;
+    /*background: #99cc99;*/
+    margin: auto;
+    line-height: 60px;
+}
+.headerbox h3{
+    /*width: 160px;*/
+    height: 100%;
+    float: left;
+    /*background: #ffe85f;*/
+    font-size: 16px;
+    margin-right: 6.25%;
+    font-weight: bold; /*粗体*/
+    text-align: center; /*居中*/
+}
+.headerbox .nav{
+    /*width: 600px;*/
+    /*去掉宽度，自适应*/
+    height: 100%;
+    float: left;
+    /*background: #f8f8f8;*/
+}
+.nav li{
+    /*导航栏中的8个标签*/
+    float: left;
+    margin-right:36px;
+}
+.nav li a:hover{
+    color: #f3a6ff;
+    /*导航栏里的选项当鼠标放上去会变色*/
+}
+.headerbox .search{
+    width: 50px;
+    height: 100%;
+    float: right;
+    /*background: #dca24f;*/
+}
+.main{
+    width: 1080px;
+    height: auto;
+    min-height: 800px;
+    background: #ffcf53;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.main .mainleft{
+    width: 810px;
+    height: auto;
+    min-height: 600px;
+    float: left;
+    margin-right: 10px;
+}
+.mainleft .leftfirst{
+    /*个人博客日记标题那一个块块*/
+    width: 100%;
+    height: auto;
+    background: #fdfff8;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+.leftfirst .pic{
+    width: 160px;
+    height: 100px;
+    background: #99cc99;
+}
+.leftfirst .text{
+    width: 610px;
+    /*height: 100%;*/
+    background: #fdfff8;
+    flex-direction: column;
+    display: flex;
+    padding: 10px;
+}
+.leftfirst .text h1{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.main .mainleft .leftsecond{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    background: #fdfff8;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.main .leftsecond .passage{
+    width: 780px;
+    height: auto;
+    min-height: 600px;
+    background: #fdfff8;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 15px;
+}
+.main .passage .title{
+    height: 21px;
+    line-height: 21px;
+    border-bottom: 1px solid #100b10;
+    color: #666666;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.main .passage .passlist{
+    width: 730px;
+    height: 600px;
+    background: #fdfff8;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.main .passage .passlist li{
+    height: 150px;
+    margin-top: 12px;
+    background: #fdfff8;
+}
+.main .passage .passlist li .passpicture{
+    width:200px ;
+    height:100px ;
+    border-radius: 5px;
+    float: left;
+    position: relative;
+}
+.main .passage .passpic img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.main .mainright{
+    width: 221px;
+    padding: 15px;
+    height: auto;
+    min-height: 580px;
+    background: #eea973;
+    float: right;
+    border-radius: 5px;
+}
+.main .mainrightfirst{
+    width: 100%;
+    height: 620px;
+    background: #99cc99;
+}
+.mainright .title {
+    height: 21px;
+    line-height: 21px;
+    border-bottom: 1px solid #100b10;
+    color: #666666;
+    font-size: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.title::before{
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    background: #333333;
+}
+.mainrightlist{
+    width: 220px;
+    height:600px;
+    /*background: #f3a6ff;*/
+    margin-top: 15px;
+}
+.mainrightlist .pictext {
+    width: 220px;
+    height: 130px;
+    background: #ffcf53;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+.mainrightlist li img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+.mainrightlist li p{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.mainright .textlist li{
+    height: 38px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    padding: 0px 0px 0px 25px;
+}
+.mainrightlist .pictext li a:hover img{
+    transform: scale(1.2,1.2);
+}
+.mainrightlist .pictext li a img{
+    transition: transform .2s ease-in;
+}
+.recommendlist >li:nth-child(3){
+    border-right: none;
+}
+.recommendlist >li:nth-child(6){
+    border-right: none;
+    border-bottom: none;
+}
+.recommendlist >li:nth-child(4){
+    border-bottom: none;
+}
+.recommendlist >li:nth-child(5){
+    border-bottom: none;
+}
+/*利用伪类选择器去掉右边框与下边框*/
+.mainright .textlist li::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    display:block;
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+    color: #333333;
+    background: #ffcf53;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.mainright .textlist >li:first-child::before{
+    content: '1';
+    background: #ffcf53;
+}
+.mainright .textlist >li:nth-child(2)::before{
+    content: '2';
+    background: #ffcf53;
+}
+.mainright .textlist >li:nth-child(3)::before{
+    content: '3';
+    background: #ffcf53;
+}
+.mainright .textlist >li:nth-child(4)::before{
+    content: '4';
+    background: #9fa496;
+}
+.mainright .textlist >li:nth-child(5)::before{
+    content: '5';
+    background: #9fa496;
+}
+.mainright .textlist >li:nth-child(6)::before{
+    content: '6';
+    background: #9fa496;
+}
+.mainright .textlist >li:nth-child(7)::before{
+    content: '7';
+    background: #9fa496;
+}
+.mainright .textlist >li:nth-child(8)::before{
+    content: '8';
+    background: #9fa496;
+}
+.mainrightsecond{
+    width: 100%;
+    height: auto;
+    min-height:200px;
+    background: #5b54ff;
+    margin-top: 15px;
+}
